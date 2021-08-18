@@ -1,3 +1,8 @@
+body {
+    background-color: #000;
+    font-family: Sans-Serif;
+}
+
 #canvas-container {
     width: 100%;
     text-align:center;
@@ -5,4 +10,5 @@
  
  canvas {
     display: inline;
+    border: 5px solid #fff;
  }
