@@ -1,32 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WebGL Content</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./webgl.css" type="text/css">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>three host test</title>
   </head>
-
   <body>
-    <div id="canvas-container">
-        <canvas id="canvas0" width="640" height="480"></canvas>
-    </div>
+    <canvas id="bg"></canvas>
+    <script type="module" src="/main.js"></script>
+    <h1> test </h1>
   </body>
-
-  <script>
-    main();
-
-    function main() {
-      const canvas = document.querySelector('#canvas0');
-      // Initialize the GL context
-      const gl = canvas.getContext('webgl');
-
-      if (!gl) {
-        alert('Unable to initialize WebGL. Your browser or machine may not support it.');
-        return;
-      }
-
-      gl.clearColor(0.0, 0.0, 0.0, 1.0);
-      gl.clear(gl.COLOR_BUFFER_BIT);
-    }
-  </script>
 </html>
